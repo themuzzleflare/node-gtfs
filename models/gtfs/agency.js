@@ -7,6 +7,7 @@ const model = {
       type: 'text',
       primary: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'agency_name',

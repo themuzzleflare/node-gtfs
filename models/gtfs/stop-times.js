@@ -103,6 +103,11 @@ const model = {
       max: 1,
     },
     {
+      name: 'stop_note',
+      type: 'text',
+      index: true,
+    },
+    {
       name: 'pickup_booking_rule_id',
       type: 'text',
       prefix: true,

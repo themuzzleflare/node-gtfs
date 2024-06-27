@@ -57,6 +57,17 @@ const model = {
       type: 'integer',
       min: 0,
       max: 2,
+      index: true,
+    },
+    {
+      name: 'route_direction',
+      type: 'text',
+      index: true,
+    },
+    {
+      name: 'trip_note',
+      type: 'text',
+      index: true,
     },
     {
       name: 'bikes_allowed',

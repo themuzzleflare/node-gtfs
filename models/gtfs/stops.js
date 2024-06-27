@@ -17,6 +17,7 @@ const model = {
       name: 'stop_name',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'tts_stop_name',
@@ -54,6 +55,7 @@ const model = {
       type: 'integer',
       min: 0,
       max: 4,
+      index: true,
     },
     {
       name: 'parent_station',
@@ -69,6 +71,7 @@ const model = {
       type: 'integer',
       min: 0,
       max: 2,
+      index: true,
     },
     {
       name: 'level_id',

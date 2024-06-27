@@ -29,6 +29,8 @@ import transfers from '../models/gtfs/transfers.js';
 import translations from '../models/gtfs/translations.js';
 import trips from '../models/gtfs/trips.js';
 
+import notes from '../models/non-standard/notes.js';
+import occupancies from '../models/non-standard/occupancies.js';
 import timetables from '../models/non-standard/timetables.js';
 import timetablePages from '../models/non-standard/timetable-pages.js';
 import timetableStopOrder from '../models/non-standard/timetable-stop-order.js';
@@ -90,6 +92,8 @@ const models = [
   transfers,
   translations,
   trips,
+  notes,
+  occupancies,
   timetables,
   timetablePages,
   timetableStopOrder,
