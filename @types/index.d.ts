@@ -488,6 +488,26 @@ export function getStopAttributes(
 ): SqlResults;
 
 /**
+ * Returns an array of notes that match query parameters.
+ */
+export function getNotes(
+  query?: SqlWhere,
+  fields?: SqlSelect,
+  sortBy?: SqlOrderBy,
+  options?: QueryOptions,
+): SqlResults;
+
+/**
+ * Returns an array of occupancies that match query parameters.
+ */
+export function getOccupancies(
+  query?: SqlWhere,
+  fields?: SqlSelect,
+  sortBy?: SqlOrderBy,
+  options?: QueryOptions,
+): SqlResults;
+
+/**
  * Returns an array of timetables that match query parameters.
  * This is for the non-standard `timetables.txt` file used in GTFS-to-HTML.
  */
