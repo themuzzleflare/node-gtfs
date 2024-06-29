@@ -574,6 +574,36 @@ export function getTripsDatedVehicleJourneys(
 ): SqlResults;
 
 /**
+ * Returns an array of vehicle boardings that match query parameters.
+ */
+export function getVehicleBoardings(
+  query?: SqlWhere,
+  fields?: SqlSelect,
+  sortBy?: SqlOrderBy,
+  options?: QueryOptions,
+): SqlResults;
+
+/**
+ * Returns an array of vehicle categories that match query parameters.
+ */
+export function getVehicleCategories(
+  query?: SqlWhere,
+  fields?: SqlSelect,
+  sortBy?: SqlOrderBy,
+  options?: QueryOptions,
+): SqlResults;
+
+/**
+ * Returns an array of vehicle couplings that match query parameters.
+ */
+export function getVehicleCouplings(
+  query?: SqlWhere,
+  fields?: SqlSelect,
+  sortBy?: SqlOrderBy,
+  options?: QueryOptions,
+): SqlResults;
+
+/**
  * Returns an array of GTFS Realtime service alerts that match query parameters.
  * This only works if you configure GTFS Realtime import in node-gtfs.
  */

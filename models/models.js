@@ -37,6 +37,9 @@ import timetableStopOrder from '../models/non-standard/timetable-stop-order.js';
 import timetableNotes from '../models/non-standard/timetable-notes.js';
 import timetableNotesReferences from '../models/non-standard/timetable-notes-references.js';
 import tripsDatedVehicleJourney from '../models/non-standard/trips-dated-vehicle-journey.js';
+import vehicleBoardings from '../models/non-standard/vehicle-boardings.js';
+import vehicleCategories from '../models/non-standard/vehicle-categories.js';
+import vehicleCouplings from '../models/non-standard/vehicle-couplings.js';
 
 import calendarAttributes from '../models/gtfs-plus/calendar-attributes.js';
 import directions from '../models/gtfs-plus/directions.js';
@@ -100,6 +103,9 @@ const models = [
   timetableNotes,
   timetableNotesReferences,
   tripsDatedVehicleJourney,
+  vehicleBoardings,
+  vehicleCategories,
+  vehicleCouplings,
   calendarAttributes,
   directions,
   routeAttributes,
