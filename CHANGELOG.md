@@ -5,6 +5,307 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.18.0] - 2025-09-06
+
+### Updated
+- Dependency Updates
+- Move tests to node.js test from Jest
+- Set a default downloadTimeout
+- Fetch GTFS-realtime in parallel
+- Better GTFS-realtime logging
+- Retry failed GTFS-realtime requests
+- Batch database writes for GTFS-realtime
+- Update ESlint config
+
+### Added
+- Added TsDoc to interfaces (#193)
+
+### Fixed
+- Pass options param to getServiceIdsByDate (#195)
+- Lints
+
+## [4.17.7] - 2025-08-11
+
+### Updated
+- Make ignoreErrors config option work on a file-by-file basis
+- Remove pluralize package
+- Remove untildify package
+- Remove timer-machine package
+
+## [4.17.6] - 2025-08-04
+
+### Updated
+- getStoptimes documentation for trips after midnight
+- Dependency Updates
+
+### Added
+- Add date filtering to getTrips function
+
+## [4.17.5] - 2025-07-11
+
+### Added
+- Add cars_allowed to trips.txt https://github.com/google/transit/pull/547
+
+### Updated
+- Dependency Updates
+
+## [4.17.4] - 2025-05-28
+
+### Fixed
+- Correct Primary Key for fare_products.txt
+
+### Added
+- Add TIDES support
+
+### Updated
+- Dependency Updates
+
+## [4.17.3] - 2025-04-23
+
+### Updated
+- Use sqlite virtual columns for timestamp columns
+
+## [4.17.2] - 2025-04-17
+
+### Updated
+- Dependency Updates
+
+### Fixed
+- Make is_default_fare_category allowed to be blank in rider_categories.txt
+
+## [4.17.1] - 2025-03-29
+
+### Updated
+- Add prefix support for GTFS-realtime data
+- Batch insert GTFS-realtime data
+
+## [4.17.0] - 2025-03-27
+
+### BREAKING CHANGES
+- **GTFS-Realtime Informed Entities**: 
+  - Renamed table from `service_alert_targets` to `service_alert_informed_entities`
+  - Changed GTFS-Realtime parsing `defaults` to `false`
+
+### Updated
+- Dependency Updates
+- Remove package-lock.json
+- Update to tsconfig.json
+
+### Fixed
+- Update Service Alert informed entities to add trip_id, direction_id and route_type fields
+- Updated GTFS-Realtime parsing to defaults=false to avoid 0 for empty int fields
+
+## [4.16.0] - 2025-03-21
+
+### Added
+- Support for rider_categories.txt
+
+### Updated
+- Dependency Updates
+
+## [4.15.15] - 2025-02-25
+
+### Updated
+- Dependency Updates
+
+## [4.15.14] - 2025-02-22
+
+### Fixed
+- Handle errors from formatGtfsLine
+
+### Updated
+- Dependency Updates
+
+## [4.15.13] - 2025-02-21
+
+### Updated
+- Return stops sorted by distance in getStops if bounding_box_side_m option present
+- Dependency Updates
+
+## [4.15.12] - 2025-01-08
+
+### Updated
+- Updated schema for service_alerts
+- Dependency Updates
+
+### Added
+- Add support for JSON column type
+
+### Fixed
+- Support for arrival/departure time after midnight
+
+## [4.15.11] - 2024-11-20
+
+### Updated
+- Updated GTFS-Realtime alerts fields
+- Dependency Updates
+
+## [4.15.10] - 2024-11-18
+
+### Updated
+- Dependency Updates
+
+## [4.15.9] - 2024-11-14
+
+### Updated
+- Updates to time columns and timestamp columns
+
+### Fixed
+- Better GTFS export for currency
+
+## [4.15.8] - 2024-11-14
+
+### Updated
+- GTFS export currency with correct number of decimal places
+
+## [4.15.7] - 2024-11-14
+
+### Updated
+- Types for gtfs-to-html files
+- Added primary key info for attributions.txt, fare_rules.txt, location_group_stops.txt, stop_areas.txt and timeframes.txt
+- Better column checks on imports
+- Don't exclude 'id' column from export
+
+### Fixed
+- Default logging verbose = true
+
+## [4.15.6] - 2024-11-05
+
+### Updated
+- Improve typescript support for results of each query method
+- Dependency Updates
+
+### Added
+- Better documentation for util functions
+
+## [4.15.5] - 2024-10-30
+
+### Fixed
+- Don't add prefixes to columns with null values
+
+### Updated
+- Dependency Updates
+
+## [4.15.4] - 2024-10-24
+
+### Updated
+- Improved logging functions
+- Dependency Updates
+
+## [4.15.3] - 2024-10-17
+
+### Added
+- Added new method getServiceIdsByDate
+- Added support for `date`, `start_time` and `end_time` in getStoptimes method
+
+## [4.15.2] - 2024-10-12
+
+### Updated
+- Export types for each GTFS file
+
+## [4.15.1] - 2024-10-06
+
+### Updated
+- Add elapsed time to output
+- Optimze formatGtfsLine function
+- Batch import into chunks
+
+## [4.15.0] - 2024-10-03
+
+### Updated
+- Faster GTFS Import (thanks to Mael)
+- Avoid array creation and string interpolation at each formatLine run
+- Add a new build-watch script
+- Memoize the calculate seconds from midnight and date functions
+- Create indexes after importing all the GTFS files
+- Avoid creating a new db connection for each importLines batch
+- Use sqlite's transaction method rather than batching prepare().run()
+- Fix getStops with bounding box test : order is not important
+- Move gtfs-realtime functions to new file
+- Dependency updates
+
+## [4.14.5] - 2024-09-23
+
+### Updated
+- Dependency Updates
+
+## [4.14.4] - 2024-09-13
+
+### Updated
+- Use `ignoreErrors` config for GTFS-Realtime fetching
+- Dependency Updates
+
+## [4.14.3] - 2024-09-12
+
+### Fixed
+- Better error handling for `gtfsrealtime-update`
+
+## [4.14.2] - 2024-09-11
+
+### Fixed
+- Fix for GTFS-Realtime vehicle positions import
+
+### Updated
+- Build before release-it
+
+## [4.14.1] - 2024-09-10
+
+### Changed
+- Update to fare_transfer_rules.txt model
+- Added types for all GTFS files
+
+### Updated
+- Dependency Updates
+
+## [4.14.0] - 2024-09-04
+
+### Changed
+- Changed config structure for GTFS-Realtime urls
+
+### Updated
+- Dependency Updates
+
+## [4.13.4] - 2024-08-05
+
+### Fixed
+- Correction to trips_dated_vehicle_journey
+
+### Updated
+- Changed model exports
+
+## [4.13.3] - 2024-08-03
+
+### Changed
+- getShapesAsGeoJSON returns MultiLineString
+
+### Updated
+- Omit undefined properties from geojson
+- Better geojson tests
+- Dependency Updates
+
+## [4.13.2] - 2024-07-27
+
+### Fixed
+- Better date import
+
+### Updated
+- Dependency Updates
+
+## [4.13.1] - 2024-07-12
+
+### Updated
+- Types for `openDb` function
+
+## [4.13.0] - 2024-07-10
+
+### Updated
+- Convert to Typescript
+- Move tests to Jest from Mocha
+- Dependency Updates
+
+### Fixed
+- Make attribution_id optional
+
 ## [4.12.0] - 2024-06-17
 
 ### Added
