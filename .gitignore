@@ -9,7 +9,7 @@ config*.json
 !config-sample*.json
 
 # build files
-/dist
+#/dist
 
 .DS_Store
 .idea
