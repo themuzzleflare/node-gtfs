@@ -17,7 +17,7 @@ import {
 } from '../utils.ts';
 
 /*
- * Returns an array of all notes that match the query parameters.
+ * Returns an array of all occupancies that match the query parameters.
  */
 export function getOccupancies<Fields extends keyof Occupancy>(
   query: SqlWhere = {},
