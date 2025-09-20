@@ -1989,13 +1989,13 @@ var occupancies = {
     },
     {
       name: 'start_date',
-      type: 'date',
+      type: 'integer',
       required: true,
       index: true,
     },
     {
       name: 'end_date',
-      type: 'date',
+      type: 'integer',
       index: true,
     },
     {
