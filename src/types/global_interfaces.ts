@@ -581,7 +581,7 @@ export interface Note {
 export interface Occupancy {
   id: number;
   trip_id: string;
-  stop_sequence: number;
+  stop_sequence?: number;
   occupancy_status: 0 | 1 | 2 | 3 | 4 | 5 | 6;
   monday: 0 | 1;
   tuesday: 0 | 1;
@@ -591,14 +591,14 @@ export interface Occupancy {
   saturday: 0 | 1;
   sunday: 0 | 1;
   start_date: number;
-  end_date: number;
-  exception: 1 | 2;
+  end_date?: number;
+  exception?: 0 | 1;
 }
 
 export interface VehicleBoarding {
   vehicle_category_id: string;
-  child_sequence: number;
-  grandchild_sequence: number;
+  child_sequence?: number;
+  grandchild_sequence?: number;
   boarding_area_id: string;
 }
 

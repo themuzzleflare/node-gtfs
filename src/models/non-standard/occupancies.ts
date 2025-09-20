@@ -83,13 +83,13 @@ export const occupancies = {
     },
     {
       name: 'start_date',
-      type: 'integer',
+      type: 'date',
       required: true,
       index: true,
     },
     {
       name: 'end_date',
-      type: 'integer',
+      type: 'date',
       index: true,
     },
     {

@@ -17,7 +17,6 @@ export const vehicleBoardings = {
       name: 'child_sequence',
       type: 'integer',
       primary: true,
-      required: true,
     },
     {
       name: 'grandchild_sequence',

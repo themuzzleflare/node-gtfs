@@ -27,12 +27,23 @@ export const routes = {
       nocase: true,
       index: true,
     },
+    // Note: TfNSW Variation.
+    // Indicates the Bus Network that the Route belongs to. The Bus
+    // Network is defined by TfNSW. For example: “Sydney Buses
+    // Network”.
     {
       name: 'route_desc',
       type: 'text',
       nocase: true,
       index: true,
     },
+    // Note: TfNSW Variation.
+    // Indicates the Route Type of the Route. as per the extended GTFS
+    // route types following Hierarchical Vehicle Type (HVT) codes from
+    // the European TPEG standard. Refer to
+    // https://support.google.com/transitpartners/answer/3520902?hl=en
+    // &ref_topic=1095593
+    // For example: “700”.
     {
       name: 'route_type',
       type: 'integer',
