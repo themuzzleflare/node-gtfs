@@ -1,3 +1,4 @@
+<!--suppress HtmlUnknownAnchorTarget, HtmlDeprecatedAttribute -->
 <p align="center">
   ➡️
   <a href="#installation">Installation</a> |
@@ -9,10 +10,10 @@
   <br /><br />
   <img src="docs/images/node-gtfs-logo.svg" alt="node-GTFS" />
   <br /><br />
-  <a href="https://www.npmjs.com/package/gtfs" rel="nofollow"><img src="https://img.shields.io/npm/v/gtfs.svg?style=flat" style="max-width: 100%;"></a>
-  <a href="https://www.npmjs.com/package/gtfs" rel="nofollow"><img src="https://img.shields.io/npm/dm/gtfs.svg?style=flat" style="max-width: 100%;"></a>
-  <a href="https://github.com/BlinkTagInc/node-gtfs/actions?query=workflow%3A%22Node+CI%22"><img src="https://img.shields.io/github/actions/workflow/status/BlinkTagInc/node-gtfs/nodejs.yml?branch=master" style="max-width: 100%;"></a>
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+  <a href="https://www.npmjs.com/package/gtfs" rel="nofollow"><img src="https://img.shields.io/npm/v/gtfs.svg?style=flat" style="max-width: 100%;" alt=""></a>
+  <a href="https://www.npmjs.com/package/gtfs" rel="nofollow"><img src="https://img.shields.io/npm/dm/gtfs.svg?style=flat" style="max-width: 100%;" alt=""></a>
+  <a href="https://github.com/BlinkTagInc/node-gtfs/actions?query=workflow%3A%22Node+CI%22"><img src="https://img.shields.io/github/actions/workflow/status/BlinkTagInc/node-gtfs/nodejs.yml?branch=master" style="max-width: 100%;" alt=""></a>
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="">
   <br /><br />
   Import and Export GTFS transit data into SQLite. Query or change routes, stops, times, fares and more.
   <br /><br />
@@ -148,18 +149,18 @@ Copy `config-sample.json` to `config.json` and then add your projects configurat
 
     cp config-sample.json config.json
 
-| option                                                            | type              | description                                                                                                                                                         |
-| ----------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`agencies`](#agencies)                                           | array             | An array of GTFS files to be imported, and which files to exclude.                                                                                                  |
-| [`csvOptions`](#csvoptions)                                       | object            | Options passed to `csv-parse` for parsing GTFS CSV files. Optional.                                                                                                 |
-| [`db`](#db)                                                       | database instance | An existing database instance to use instead of relying on node-gtfs to connect. Optional.                                                                          |
-| [`downloadTimeout`](#downloadtimeout)                             | integer           | The number of milliseconds to wait before throwing an error when downloading GTFS. Optional.                                                                        |
-| [`exportPath`](#exportpath)                                       | string            | A path to a directory to put exported GTFS files. Optional, defaults to `gtfs-export/<agency_name>`.                                                                |
-| [`gtfsRealtimeExpirationSeconds`](#gtfsrealtimeexpirationseconds) | integer           | Amount of time in seconds to allow GTFS-Realtime data to be stored in database before allowing to be deleted. Optional, defaults to 0.                              |
-| [`ignoreDuplicates`](#ignoreduplicates)                           | boolean           | Whether or not to ignore unique constraints on ids when importing GTFS, such as `trip_id`, `calendar_id`. Optional, defaults to false.                              |
+| option                                                            | type              | description                                                                                                                                                 |
+|-------------------------------------------------------------------|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [`agencies`](#agencies)                                           | array             | An array of GTFS files to be imported, and which files to exclude.                                                                                          |
+| [`csvOptions`](#csvoptions)                                       | object            | Options passed to `csv-parse` for parsing GTFS CSV files. Optional.                                                                                         |
+| [`db`](#db)                                                       | database instance | An existing database instance to use instead of relying on node-gtfs to connect. Optional.                                                                  |
+| [`downloadTimeout`](#downloadtimeout)                             | integer           | The number of milliseconds to wait before throwing an error when downloading GTFS. Optional.                                                                |
+| [`exportPath`](#exportpath)                                       | string            | A path to a directory to put exported GTFS files. Optional, defaults to `gtfs-export/<agency_name>`.                                                        |
+| [`gtfsRealtimeExpirationSeconds`](#gtfsrealtimeexpirationseconds) | integer           | Amount of time in seconds to allow GTFS-Realtime data to be stored in database before allowing to be deleted. Optional, defaults to 0.                      |
+| [`ignoreDuplicates`](#ignoreduplicates)                           | boolean           | Whether or not to ignore unique constraints on ids when importing GTFS, such as `trip_id`, `calendar_id`. Optional, defaults to false.                      |
 | [`ignoreErrors`](#ignoreerrors)                                   | boolean           | Whether or not to ignore errors during the import process. If true, failed files will be skipped while the rest are processed. Optional, defaults to false. |
-| [`sqlitePath`](#sqlitepath)                                       | string            | A path to an SQLite database. Optional, defaults to using an in-memory database.                                                                                    |
-| [`verbose`](#verbose)                                             | boolean           | Whether or not to print output to the console. Optional, defaults to true.                                                                                          |
+| [`sqlitePath`](#sqlitepath)                                       | string            | A path to an SQLite database. Optional, defaults to using an in-memory database.                                                                            |
+| [`verbose`](#verbose)                                             | boolean           | Whether or not to print output to the console. Optional, defaults to true.                                                                                  |
 
 ### agencies
 
@@ -170,7 +171,7 @@ For GTFS files that contain more than one agency, you only need to list each GTF
 #### agencies options
 
 | option                     | type   | description                                                                                                                                                         |
-| -------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|----------------------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `url`                      | string | The URL to a zipped GTFS file. Required if `path` not present.                                                                                                      |
 | `path`                     | string | A path to a zipped GTFS file or a directory of unzipped .txt files. Required if `url` is not present.                                                               |
 | `headers`                  | object | An object of HTTP headers in key:value format to use when fetching GTFS from the `url` specified. Optional.                                                         |
@@ -314,9 +315,11 @@ For GTFS files that contain more than one agency, you only need to list each GTF
 For instance, if you wanted to skip importing invalid lines in the GTFS file:
 
 ```json
-    "csvOptions": {
-      "skip_lines_with_error": true
-    }
+{
+  "csvOptions": {
+    "skip_lines_with_error": true
+  }
+}
 ```
 
 See [full list of options](https://csv.js.org/parse/options/).
@@ -470,7 +473,9 @@ importGtfs({
 {String} A path to an SQLite database. Optional, defaults to using an in-memory database with a value of `:memory:`.
 
 ```json
-    "sqlitePath": "/dev/sqlite/gtfs"
+{
+  "sqlitePath": "/dev/sqlite/gtfs"
+}
 ```
 
 ### verbose
@@ -753,7 +758,7 @@ const stops = getStops(
   {
     stop_id: [
       '123',
-      '234'
+      '234',
       '345'
     ]
   }
@@ -1046,7 +1051,7 @@ const trips = getTrips({
 const trips = getTrips({
   route_id: 'Lo-16APR',
   direction_id: 0,
-  service_id: '
+  service_id: ''
 });
 
 /*
