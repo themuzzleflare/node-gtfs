@@ -12,22 +12,26 @@ export const vehicleBoardings = {
       type: 'text',
       primary: true,
       required: true,
+      index: true,
     },
     {
       name: 'child_sequence',
       type: 'integer',
       primary: true,
+      index: true,
     },
     {
       name: 'grandchild_sequence',
       type: 'integer',
       primary: true,
+      index: true,
     },
     {
       name: 'boarding_area_id',
       type: 'text',
       primary: true,
       required: true,
+      index: true,
     },
   ],
 };

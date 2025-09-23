@@ -12,21 +12,25 @@ export const vehicleCouplings = {
       type: 'text',
       primary: true,
       required: true,
+      index: true,
     },
     {
       name: 'child_id',
       type: 'text',
       primary: true,
       required: true,
+      index: true,
     },
     {
       name: 'child_sequence',
       type: 'integer',
       required: true,
+      index: true,
     },
     {
       name: 'child_label',
       type: 'text',
+      index: true,
     },
   ],
 };

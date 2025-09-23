@@ -8,16 +8,19 @@ export const levels = {
       primary: true,
       required: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'level_index',
       type: 'real',
       required: true,
+      index: true,
     },
     {
       name: 'level_name',
       type: 'text',
       nocase: true,
+      index: true,
     },
   ],
 };

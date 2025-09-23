@@ -8,6 +8,7 @@ export const shapes = {
       required: true,
       primary: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'shape_pt_lat',
@@ -15,6 +16,7 @@ export const shapes = {
       required: true,
       min: -90,
       max: 90,
+      index: true,
     },
     {
       name: 'shape_pt_lon',
@@ -22,6 +24,7 @@ export const shapes = {
       required: true,
       min: -180,
       max: 180,
+      index: true,
     },
     {
       name: 'shape_pt_sequence',
@@ -29,11 +32,13 @@ export const shapes = {
       required: true,
       primary: true,
       min: 0,
+      index: true,
     },
     {
       name: 'shape_dist_traveled',
       type: 'real',
       min: 0,
+      index: true,
     },
   ],
 };

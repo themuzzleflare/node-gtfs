@@ -8,6 +8,7 @@ export const calendar = {
       required: true,
       primary: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'monday',
@@ -15,6 +16,7 @@ export const calendar = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'tuesday',
@@ -22,6 +24,7 @@ export const calendar = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'wednesday',
@@ -29,6 +32,7 @@ export const calendar = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'thursday',
@@ -36,6 +40,7 @@ export const calendar = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'friday',
@@ -43,6 +48,7 @@ export const calendar = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'saturday',
@@ -50,6 +56,7 @@ export const calendar = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'sunday',
@@ -57,6 +64,7 @@ export const calendar = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'start_date',

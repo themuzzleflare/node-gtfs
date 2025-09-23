@@ -15,35 +15,42 @@ var agency = {
       type: 'text',
       required: true,
       nocase: true,
+      index: true,
     },
     {
       name: 'agency_url',
       type: 'text',
       required: true,
+      index: true,
     },
     {
       name: 'agency_timezone',
       type: 'text',
       required: true,
+      index: true,
     },
     {
       name: 'agency_lang',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'agency_phone',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'agency_fare_url',
       type: 'text',
+      index: true,
     },
     {
       name: 'agency_email',
       type: 'text',
       nocase: true,
+      index: true,
     },
   ],
 };
@@ -227,12 +234,14 @@ var calendarDates = {
       required: true,
       primary: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'date',
       type: 'date',
       required: true,
       primary: true,
+      index: true,
     },
     {
       name: 'exception_type',
@@ -246,6 +255,7 @@ var calendarDates = {
       name: 'holiday_name',
       type: 'text',
       nocase: true,
+      index: true,
     },
   ],
 };
@@ -261,6 +271,7 @@ var calendar = {
       required: true,
       primary: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'monday',
@@ -268,6 +279,7 @@ var calendar = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'tuesday',
@@ -275,6 +287,7 @@ var calendar = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'wednesday',
@@ -282,6 +295,7 @@ var calendar = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'thursday',
@@ -289,6 +303,7 @@ var calendar = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'friday',
@@ -296,6 +311,7 @@ var calendar = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'saturday',
@@ -303,6 +319,7 @@ var calendar = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'sunday',
@@ -310,6 +327,7 @@ var calendar = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'start_date',
@@ -596,42 +614,51 @@ var feedInfo = {
       type: 'text',
       required: true,
       nocase: true,
+      index: true,
     },
     {
       name: 'feed_publisher_url',
       type: 'text',
       required: true,
+      index: true,
     },
     {
       name: 'feed_lang',
       type: 'text',
       required: true,
+      index: true,
     },
     {
       name: 'default_lang',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'feed_start_date',
       type: 'date',
+      index: true,
     },
     {
       name: 'feed_end_date',
       type: 'date',
+      index: true,
     },
     {
       name: 'feed_version',
       type: 'text',
+      index: true,
     },
     {
       name: 'feed_contact_email',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'feed_contact_url',
       type: 'text',
+      index: true,
     },
   ],
 };
@@ -685,16 +712,19 @@ var levels = {
       primary: true,
       required: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'level_index',
       type: 'real',
       required: true,
+      index: true,
     },
     {
       name: 'level_name',
       type: 'text',
       nocase: true,
+      index: true,
     },
   ],
 };
@@ -785,18 +815,21 @@ var pathways = {
       primary: true,
       required: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'from_stop_id',
       type: 'text',
       required: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'to_stop_id',
       type: 'text',
       required: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'pathway_mode',
@@ -804,6 +837,7 @@ var pathways = {
       required: true,
       min: 1,
       max: 7,
+      index: true,
     },
     {
       name: 'is_bidirectional',
@@ -811,39 +845,47 @@ var pathways = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'length',
       type: 'real',
       min: 0,
+      index: true,
     },
     {
       name: 'traversal_time',
       type: 'integer',
       min: 0,
+      index: true,
     },
     {
       name: 'stair_count',
       type: 'integer',
+      index: true,
     },
     {
       name: 'max_slope',
       type: 'real',
+      index: true,
     },
     {
       name: 'min_width',
       type: 'real',
       min: 0,
+      index: true,
     },
     {
       name: 'signposted_as',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'reversed_signposted_as',
       type: 'text',
       nocase: true,
+      index: true,
     },
   ],
 };
@@ -910,6 +952,7 @@ var routes = {
       primary: true,
       required: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'agency_id',
@@ -958,38 +1001,45 @@ var routes = {
     {
       name: 'route_url',
       type: 'text',
+      index: true,
     },
     {
       name: 'route_color',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'route_text_color',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'route_sort_order',
       type: 'integer',
       min: 0,
+      index: true,
     },
     {
       name: 'continuous_pickup',
       type: 'integer',
       min: 0,
       max: 3,
+      index: true,
     },
     {
       name: 'continuous_drop_off',
       type: 'integer',
       min: 0,
       max: 3,
+      index: true,
     },
     {
       name: 'network_id',
       type: 'text',
       prefix: true,
+      index: true,
     },
     {
       name: 'exact_times',
@@ -1012,6 +1062,7 @@ var shapes = {
       required: true,
       primary: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'shape_pt_lat',
@@ -1019,6 +1070,7 @@ var shapes = {
       required: true,
       min: -90,
       max: 90,
+      index: true,
     },
     {
       name: 'shape_pt_lon',
@@ -1026,6 +1078,7 @@ var shapes = {
       required: true,
       min: -180,
       max: 180,
+      index: true,
     },
     {
       name: 'shape_pt_sequence',
@@ -1033,11 +1086,13 @@ var shapes = {
       required: true,
       primary: true,
       min: 0,
+      index: true,
     },
     {
       name: 'shape_dist_traveled',
       type: 'real',
       min: 0,
+      index: true,
     },
   ],
 };
@@ -1075,14 +1130,17 @@ var stopTimes = {
       required: true,
       primary: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'arrival_time',
       type: 'time',
+      index: true,
     },
     {
       name: 'departure_time',
       type: 'time',
+      index: true,
     },
     {
       name: 'location_group_id',
@@ -1109,50 +1167,59 @@ var stopTimes = {
       required: true,
       primary: true,
       min: 0,
+      index: true,
     },
     {
       name: 'stop_headsign',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'start_pickup_drop_off_window',
       type: 'time',
+      index: true,
     },
     {
       name: 'pickup_type',
       type: 'integer',
       min: 0,
       max: 3,
+      index: true,
     },
     {
       name: 'drop_off_type',
       type: 'integer',
       min: 0,
       max: 3,
+      index: true,
     },
     {
       name: 'continuous_pickup',
       type: 'integer',
       min: 0,
       max: 3,
+      index: true,
     },
     {
       name: 'continuous_drop_off',
       type: 'integer',
       min: 0,
       max: 3,
+      index: true,
     },
     {
       name: 'shape_dist_traveled',
       type: 'real',
       min: 0,
+      index: true,
     },
     {
       name: 'timepoint',
       type: 'integer',
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'stop_note',
@@ -1185,10 +1252,12 @@ var stops = {
       primary: true,
       required: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'stop_code',
       type: 'text',
+      index: true,
     },
     {
       name: 'stop_name',
@@ -1200,32 +1269,38 @@ var stops = {
       name: 'tts_stop_name',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'stop_desc',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'stop_lat',
       type: 'real',
       min: -90,
       max: 90,
+      index: true,
     },
     {
       name: 'stop_lon',
       type: 'real',
       min: -180,
       max: 180,
+      index: true,
     },
     {
       name: 'zone_id',
       type: 'text',
       prefix: true,
+      index: true,
     },
     {
       name: 'stop_url',
       type: 'text',
+      index: true,
     },
     {
       name: 'location_type',
@@ -1243,6 +1318,7 @@ var stops = {
     {
       name: 'stop_timezone',
       type: 'text',
+      index: true,
     },
     {
       name: 'wheelchair_boarding',
@@ -1255,10 +1331,12 @@ var stops = {
       name: 'level_id',
       type: 'text',
       prefix: true,
+      index: true,
     },
     {
       name: 'platform_code',
       type: 'text',
+      index: true,
     },
   ],
 };
@@ -1424,16 +1502,19 @@ var trips = {
       primary: true,
       required: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'trip_headsign',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'trip_short_name',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'direction_id',
@@ -1476,12 +1557,14 @@ var trips = {
       type: 'integer',
       min: 0,
       max: 2,
+      index: true,
     },
     {
       name: 'cars_allowed',
       type: 'integer',
       min: 0,
       max: 2,
+      index: true,
     },
   ],
 };
@@ -1799,11 +1882,13 @@ var notes = {
       type: 'text',
       primary: true,
       required: true,
+      index: true,
     },
     {
       name: 'note_text',
       type: 'text',
       required: true,
+      index: true,
     },
   ],
 };
@@ -1818,6 +1903,7 @@ var occupancies = {
       name: 'id',
       type: 'integer',
       primary: true,
+      index: true,
     },
     {
       name: 'trip_id',
@@ -1845,6 +1931,7 @@ var occupancies = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'tuesday',
@@ -1852,6 +1939,7 @@ var occupancies = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'wednesday',
@@ -1859,6 +1947,7 @@ var occupancies = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'thursday',
@@ -1866,6 +1955,7 @@ var occupancies = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'friday',
@@ -1873,6 +1963,7 @@ var occupancies = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'saturday',
@@ -1880,6 +1971,7 @@ var occupancies = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'sunday',
@@ -1887,6 +1979,7 @@ var occupancies = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'start_date',
@@ -1920,22 +2013,26 @@ var vehicleBoardings = {
       type: 'text',
       primary: true,
       required: true,
+      index: true,
     },
     {
       name: 'child_sequence',
       type: 'integer',
       primary: true,
+      index: true,
     },
     {
       name: 'grandchild_sequence',
       type: 'integer',
       primary: true,
+      index: true,
     },
     {
       name: 'boarding_area_id',
       type: 'text',
       primary: true,
       required: true,
+      index: true,
     },
   ],
 };
@@ -1951,10 +2048,12 @@ var vehicleCategories = {
       type: 'text',
       primary: true,
       required: true,
+      index: true,
     },
     {
       name: 'vehicle_category_name',
       type: 'text',
+      index: true,
     },
   ],
 };
@@ -1970,21 +2069,25 @@ var vehicleCouplings = {
       type: 'text',
       primary: true,
       required: true,
+      index: true,
     },
     {
       name: 'child_id',
       type: 'text',
       primary: true,
       required: true,
+      index: true,
     },
     {
       name: 'child_sequence',
       type: 'integer',
       required: true,
+      index: true,
     },
     {
       name: 'child_label',
       type: 'text',
+      index: true,
     },
   ],
 };

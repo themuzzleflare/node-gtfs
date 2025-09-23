@@ -8,18 +8,21 @@ export const pathways = {
       primary: true,
       required: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'from_stop_id',
       type: 'text',
       required: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'to_stop_id',
       type: 'text',
       required: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'pathway_mode',
@@ -27,6 +30,7 @@ export const pathways = {
       required: true,
       min: 1,
       max: 7,
+      index: true,
     },
     {
       name: 'is_bidirectional',
@@ -34,39 +38,47 @@ export const pathways = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'length',
       type: 'real',
       min: 0,
+      index: true,
     },
     {
       name: 'traversal_time',
       type: 'integer',
       min: 0,
+      index: true,
     },
     {
       name: 'stair_count',
       type: 'integer',
+      index: true,
     },
     {
       name: 'max_slope',
       type: 'real',
+      index: true,
     },
     {
       name: 'min_width',
       type: 'real',
       min: 0,
+      index: true,
     },
     {
       name: 'signposted_as',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'reversed_signposted_as',
       type: 'text',
       nocase: true,
+      index: true,
     },
   ],
 };

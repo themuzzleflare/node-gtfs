@@ -12,10 +12,12 @@ export const vehicleCategories = {
       type: 'text',
       primary: true,
       required: true,
+      index: true,
     },
     {
       name: 'vehicle_category_name',
       type: 'text',
+      index: true,
     },
   ],
 };

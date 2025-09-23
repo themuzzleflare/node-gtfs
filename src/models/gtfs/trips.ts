@@ -22,16 +22,19 @@ export const trips = {
       primary: true,
       required: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'trip_headsign',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'trip_short_name',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'direction_id',
@@ -74,12 +77,14 @@ export const trips = {
       type: 'integer',
       min: 0,
       max: 2,
+      index: true,
     },
     {
       name: 'cars_allowed',
       type: 'integer',
       min: 0,
       max: 2,
+      index: true,
     },
   ],
 };

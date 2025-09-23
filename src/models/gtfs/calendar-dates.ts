@@ -8,12 +8,14 @@ export const calendarDates = {
       required: true,
       primary: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'date',
       type: 'date',
       required: true,
       primary: true,
+      index: true,
     },
     {
       name: 'exception_type',
@@ -27,6 +29,7 @@ export const calendarDates = {
       name: 'holiday_name',
       type: 'text',
       nocase: true,
+      index: true,
     },
   ],
 };

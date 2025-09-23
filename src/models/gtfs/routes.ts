@@ -8,6 +8,7 @@ export const routes = {
       primary: true,
       required: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'agency_id',
@@ -56,38 +57,45 @@ export const routes = {
     {
       name: 'route_url',
       type: 'text',
+      index: true,
     },
     {
       name: 'route_color',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'route_text_color',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'route_sort_order',
       type: 'integer',
       min: 0,
+      index: true,
     },
     {
       name: 'continuous_pickup',
       type: 'integer',
       min: 0,
       max: 3,
+      index: true,
     },
     {
       name: 'continuous_drop_off',
       type: 'integer',
       min: 0,
       max: 3,
+      index: true,
     },
     {
       name: 'network_id',
       type: 'text',
       prefix: true,
+      index: true,
     },
     {
       name: 'exact_times',

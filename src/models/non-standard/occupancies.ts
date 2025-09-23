@@ -11,6 +11,7 @@ export const occupancies = {
       name: 'id',
       type: 'integer',
       primary: true,
+      index: true,
     },
     {
       name: 'trip_id',
@@ -38,6 +39,7 @@ export const occupancies = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'tuesday',
@@ -45,6 +47,7 @@ export const occupancies = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'wednesday',
@@ -52,6 +55,7 @@ export const occupancies = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'thursday',
@@ -59,6 +63,7 @@ export const occupancies = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'friday',
@@ -66,6 +71,7 @@ export const occupancies = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'saturday',
@@ -73,6 +79,7 @@ export const occupancies = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'sunday',
@@ -80,6 +87,7 @@ export const occupancies = {
       required: true,
       min: 0,
       max: 1,
+      index: true,
     },
     {
       name: 'start_date',

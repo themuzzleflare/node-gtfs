@@ -16,34 +16,34 @@ declare const agency: {
         type: string;
         required: boolean;
         nocase: boolean;
+        index: boolean;
         primary?: undefined;
         prefix?: undefined;
-        index?: undefined;
       }
     | {
         name: string;
         type: string;
         required: boolean;
+        index: boolean;
         primary?: undefined;
         prefix?: undefined;
-        index?: undefined;
         nocase?: undefined;
       }
     | {
         name: string;
         type: string;
         nocase: boolean;
+        index: boolean;
         primary?: undefined;
         prefix?: undefined;
-        index?: undefined;
         required?: undefined;
       }
     | {
         name: string;
         type: string;
+        index: boolean;
         primary?: undefined;
         prefix?: undefined;
-        index?: undefined;
         required?: undefined;
         nocase?: undefined;
       }
@@ -215,9 +215,9 @@ declare const calendarDates: {
         required: boolean;
         primary: boolean;
         prefix: boolean;
+        index: boolean;
         min?: undefined;
         max?: undefined;
-        index?: undefined;
         nocase?: undefined;
       }
     | {
@@ -225,10 +225,10 @@ declare const calendarDates: {
         type: string;
         required: boolean;
         primary: boolean;
+        index: boolean;
         prefix?: undefined;
         min?: undefined;
         max?: undefined;
-        index?: undefined;
         nocase?: undefined;
       }
     | {
@@ -246,12 +246,12 @@ declare const calendarDates: {
         name: string;
         type: string;
         nocase: boolean;
+        index: boolean;
         required?: undefined;
         primary?: undefined;
         prefix?: undefined;
         min?: undefined;
         max?: undefined;
-        index?: undefined;
       }
   )[];
 };
@@ -266,9 +266,9 @@ declare const calendar: {
         required: boolean;
         primary: boolean;
         prefix: boolean;
+        index: boolean;
         min?: undefined;
         max?: undefined;
-        index?: undefined;
       }
     | {
         name: string;
@@ -276,9 +276,9 @@ declare const calendar: {
         required: boolean;
         min: number;
         max: number;
+        index: boolean;
         primary?: undefined;
         prefix?: undefined;
-        index?: undefined;
       }
     | {
         name: string;
@@ -535,22 +535,26 @@ declare const feedInfo: {
         type: string;
         required: boolean;
         nocase: boolean;
+        index: boolean;
       }
     | {
         name: string;
         type: string;
         required: boolean;
+        index: boolean;
         nocase?: undefined;
       }
     | {
         name: string;
         type: string;
         nocase: boolean;
+        index: boolean;
         required?: undefined;
       }
     | {
         name: string;
         type: string;
+        index: boolean;
         required?: undefined;
         nocase?: undefined;
       }
@@ -619,12 +623,14 @@ declare const levels: {
         primary: boolean;
         required: boolean;
         prefix: boolean;
+        index: boolean;
         nocase?: undefined;
       }
     | {
         name: string;
         type: string;
         required: boolean;
+        index: boolean;
         primary?: undefined;
         prefix?: undefined;
         nocase?: undefined;
@@ -633,6 +639,7 @@ declare const levels: {
         name: string;
         type: string;
         nocase: boolean;
+        index: boolean;
         primary?: undefined;
         required?: undefined;
         prefix?: undefined;
@@ -716,6 +723,7 @@ declare const pathways: {
         primary: boolean;
         required: boolean;
         prefix: boolean;
+        index: boolean;
         min?: undefined;
         max?: undefined;
         nocase?: undefined;
@@ -725,6 +733,7 @@ declare const pathways: {
         type: string;
         required: boolean;
         prefix: boolean;
+        index: boolean;
         primary?: undefined;
         min?: undefined;
         max?: undefined;
@@ -736,6 +745,7 @@ declare const pathways: {
         required: boolean;
         min: number;
         max: number;
+        index: boolean;
         primary?: undefined;
         prefix?: undefined;
         nocase?: undefined;
@@ -744,6 +754,7 @@ declare const pathways: {
         name: string;
         type: string;
         min: number;
+        index: boolean;
         primary?: undefined;
         required?: undefined;
         prefix?: undefined;
@@ -753,6 +764,7 @@ declare const pathways: {
     | {
         name: string;
         type: string;
+        index: boolean;
         primary?: undefined;
         required?: undefined;
         prefix?: undefined;
@@ -764,6 +776,7 @@ declare const pathways: {
         name: string;
         type: string;
         nocase: boolean;
+        index: boolean;
         primary?: undefined;
         required?: undefined;
         prefix?: undefined;
@@ -849,7 +862,7 @@ declare const routes: {
         primary: boolean;
         required: boolean;
         prefix: boolean;
-        index?: undefined;
+        index: boolean;
         nocase?: undefined;
         min?: undefined;
         max?: undefined;
@@ -890,22 +903,11 @@ declare const routes: {
     | {
         name: string;
         type: string;
+        index: boolean;
         primary?: undefined;
         required?: undefined;
         prefix?: undefined;
-        index?: undefined;
         nocase?: undefined;
-        min?: undefined;
-        max?: undefined;
-      }
-    | {
-        name: string;
-        type: string;
-        nocase: boolean;
-        primary?: undefined;
-        required?: undefined;
-        prefix?: undefined;
-        index?: undefined;
         min?: undefined;
         max?: undefined;
       }
@@ -913,33 +915,11 @@ declare const routes: {
         name: string;
         type: string;
         min: number;
+        index: boolean;
         primary?: undefined;
         required?: undefined;
         prefix?: undefined;
-        index?: undefined;
         nocase?: undefined;
-        max?: undefined;
-      }
-    | {
-        name: string;
-        type: string;
-        min: number;
-        max: number;
-        primary?: undefined;
-        required?: undefined;
-        prefix?: undefined;
-        index?: undefined;
-        nocase?: undefined;
-      }
-    | {
-        name: string;
-        type: string;
-        prefix: boolean;
-        primary?: undefined;
-        required?: undefined;
-        index?: undefined;
-        nocase?: undefined;
-        min?: undefined;
         max?: undefined;
       }
     | {
@@ -966,6 +946,7 @@ declare const shapes: {
         required: boolean;
         primary: boolean;
         prefix: boolean;
+        index: boolean;
         min?: undefined;
         max?: undefined;
       }
@@ -975,6 +956,7 @@ declare const shapes: {
         required: boolean;
         min: number;
         max: number;
+        index: boolean;
         primary?: undefined;
         prefix?: undefined;
       }
@@ -984,6 +966,7 @@ declare const shapes: {
         required: boolean;
         primary: boolean;
         min: number;
+        index: boolean;
         prefix?: undefined;
         max?: undefined;
       }
@@ -991,6 +974,7 @@ declare const shapes: {
         name: string;
         type: string;
         min: number;
+        index: boolean;
         required?: undefined;
         primary?: undefined;
         prefix?: undefined;
@@ -1021,7 +1005,7 @@ declare const stopTimes: {
         required: boolean;
         primary: boolean;
         prefix: boolean;
-        index?: undefined;
+        index: boolean;
         min?: undefined;
         nocase?: undefined;
         max?: undefined;
@@ -1029,10 +1013,10 @@ declare const stopTimes: {
     | {
         name: string;
         type: string;
+        index: boolean;
         required?: undefined;
         primary?: undefined;
         prefix?: undefined;
-        index?: undefined;
         min?: undefined;
         nocase?: undefined;
         max?: undefined;
@@ -1065,8 +1049,8 @@ declare const stopTimes: {
         required: boolean;
         primary: boolean;
         min: number;
+        index: boolean;
         prefix?: undefined;
-        index?: undefined;
         nocase?: undefined;
         max?: undefined;
       }
@@ -1074,10 +1058,10 @@ declare const stopTimes: {
         name: string;
         type: string;
         nocase: boolean;
+        index: boolean;
         required?: undefined;
         primary?: undefined;
         prefix?: undefined;
-        index?: undefined;
         min?: undefined;
         max?: undefined;
       }
@@ -1086,31 +1070,20 @@ declare const stopTimes: {
         type: string;
         min: number;
         max: number;
+        index: boolean;
         required?: undefined;
         primary?: undefined;
         prefix?: undefined;
-        index?: undefined;
         nocase?: undefined;
       }
     | {
         name: string;
         type: string;
         min: number;
-        required?: undefined;
-        primary?: undefined;
-        prefix?: undefined;
-        index?: undefined;
-        nocase?: undefined;
-        max?: undefined;
-      }
-    | {
-        name: string;
-        type: string;
         index: boolean;
         required?: undefined;
         primary?: undefined;
         prefix?: undefined;
-        min?: undefined;
         nocase?: undefined;
         max?: undefined;
       }
@@ -1127,19 +1100,19 @@ declare const stops: {
         primary: boolean;
         required: boolean;
         prefix: boolean;
+        index: boolean;
         nocase?: undefined;
-        index?: undefined;
         min?: undefined;
         max?: undefined;
       }
     | {
         name: string;
         type: string;
+        index: boolean;
         primary?: undefined;
         required?: undefined;
         prefix?: undefined;
         nocase?: undefined;
-        index?: undefined;
         min?: undefined;
         max?: undefined;
       }
@@ -1157,39 +1130,6 @@ declare const stops: {
     | {
         name: string;
         type: string;
-        nocase: boolean;
-        primary?: undefined;
-        required?: undefined;
-        prefix?: undefined;
-        index?: undefined;
-        min?: undefined;
-        max?: undefined;
-      }
-    | {
-        name: string;
-        type: string;
-        min: number;
-        max: number;
-        primary?: undefined;
-        required?: undefined;
-        prefix?: undefined;
-        nocase?: undefined;
-        index?: undefined;
-      }
-    | {
-        name: string;
-        type: string;
-        prefix: boolean;
-        primary?: undefined;
-        required?: undefined;
-        nocase?: undefined;
-        index?: undefined;
-        min?: undefined;
-        max?: undefined;
-      }
-    | {
-        name: string;
-        type: string;
         min: number;
         max: number;
         index: boolean;
@@ -1201,8 +1141,8 @@ declare const stops: {
     | {
         name: string;
         type: string;
-        index: boolean;
         prefix: boolean;
+        index: boolean;
         primary?: undefined;
         required?: undefined;
         nocase?: undefined;
@@ -1333,7 +1273,7 @@ declare const trips: {
         primary: boolean;
         required: boolean;
         prefix: boolean;
-        index?: undefined;
+        index: boolean;
         nocase?: undefined;
         min?: undefined;
         max?: undefined;
@@ -1342,8 +1282,8 @@ declare const trips: {
         name: string;
         type: string;
         nocase: boolean;
+        index: boolean;
         required?: undefined;
-        index?: undefined;
         prefix?: undefined;
         primary?: undefined;
         min?: undefined;
@@ -1381,17 +1321,6 @@ declare const trips: {
         nocase?: undefined;
         min?: undefined;
         max?: undefined;
-      }
-    | {
-        name: string;
-        type: string;
-        min: number;
-        max: number;
-        required?: undefined;
-        index?: undefined;
-        prefix?: undefined;
-        primary?: undefined;
-        nocase?: undefined;
       }
   )[];
 };
@@ -1657,11 +1586,13 @@ declare const notes: {
         type: string;
         primary: boolean;
         required: boolean;
+        index: boolean;
       }
     | {
         name: string;
         type: string;
         required: boolean;
+        index: boolean;
         primary?: undefined;
       }
   )[];
@@ -1676,8 +1607,8 @@ declare const occupancies: {
         name: string;
         type: string;
         primary: boolean;
+        index: boolean;
         required?: undefined;
-        index?: undefined;
         min?: undefined;
         max?: undefined;
       }
@@ -1707,15 +1638,6 @@ declare const occupancies: {
         index: boolean;
         required: boolean;
         primary?: undefined;
-      }
-    | {
-        name: string;
-        type: string;
-        required: boolean;
-        min: number;
-        max: number;
-        primary?: undefined;
-        index?: undefined;
       }
     | {
         name: string;
@@ -1748,11 +1670,13 @@ declare const vehicleBoardings: {
         type: string;
         primary: boolean;
         required: boolean;
+        index: boolean;
       }
     | {
         name: string;
         type: string;
         primary: boolean;
+        index: boolean;
         required?: undefined;
       }
   )[];
@@ -1768,10 +1692,12 @@ declare const vehicleCategories: {
         type: string;
         primary: boolean;
         required: boolean;
+        index: boolean;
       }
     | {
         name: string;
         type: string;
+        index: boolean;
         primary?: undefined;
         required?: undefined;
       }
@@ -1788,16 +1714,19 @@ declare const vehicleCouplings: {
         type: string;
         primary: boolean;
         required: boolean;
+        index: boolean;
       }
     | {
         name: string;
         type: string;
         required: boolean;
+        index: boolean;
         primary?: undefined;
       }
     | {
         name: string;
         type: string;
+        index: boolean;
         primary?: undefined;
         required?: undefined;
       }

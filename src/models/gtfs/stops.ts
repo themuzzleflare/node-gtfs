@@ -8,10 +8,12 @@ export const stops = {
       primary: true,
       required: true,
       prefix: true,
+      index: true,
     },
     {
       name: 'stop_code',
       type: 'text',
+      index: true,
     },
     {
       name: 'stop_name',
@@ -23,32 +25,38 @@ export const stops = {
       name: 'tts_stop_name',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'stop_desc',
       type: 'text',
       nocase: true,
+      index: true,
     },
     {
       name: 'stop_lat',
       type: 'real',
       min: -90,
       max: 90,
+      index: true,
     },
     {
       name: 'stop_lon',
       type: 'real',
       min: -180,
       max: 180,
+      index: true,
     },
     {
       name: 'zone_id',
       type: 'text',
       prefix: true,
+      index: true,
     },
     {
       name: 'stop_url',
       type: 'text',
+      index: true,
     },
     {
       name: 'location_type',
@@ -66,6 +74,7 @@ export const stops = {
     {
       name: 'stop_timezone',
       type: 'text',
+      index: true,
     },
     {
       name: 'wheelchair_boarding',
@@ -78,10 +87,12 @@ export const stops = {
       name: 'level_id',
       type: 'text',
       prefix: true,
+      index: true,
     },
     {
       name: 'platform_code',
       type: 'text',
+      index: true,
     },
   ],
 };

@@ -12,11 +12,13 @@ export const notes = {
       type: 'text',
       primary: true,
       required: true,
+      index: true,
     },
     {
       name: 'note_text',
       type: 'text',
       required: true,
+      index: true,
     },
   ],
 };
