@@ -433,6 +433,7 @@ export interface Route {
   continuous_drop_off?: 0 | 1 | 2 | 3;
   network_id?: string;
   exact_times?: 0 | 1;
+  booking_required?: 0 | 1;
 }
 
 export interface Shape {
@@ -532,6 +533,7 @@ export interface Trip {
   trip_note?: string;
   bikes_allowed?: 0 | 1 | 2;
   cars_allowed?: 0 | 1 | 2;
+  vehicle_category_id?: string;
 }
 
 export interface Timetable {

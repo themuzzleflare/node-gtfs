@@ -86,5 +86,10 @@ export const trips = {
       max: 2,
       index: true,
     },
+    {
+      name: 'vehicle_category_id',
+      type: 'text',
+      index: true,
+    },
   ],
 };

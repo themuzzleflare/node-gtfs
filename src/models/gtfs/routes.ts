@@ -104,5 +104,17 @@ export const routes = {
       max: 1,
       index: true,
     },
+    // The booking_required field is used to
+    // determine if you are required to book
+    // the trip to board.
+    // 1 for true
+    // 0 for false
+    {
+      name: 'booking_required',
+      type: 'integer',
+      min: 0,
+      max: 1,
+      index: true,
+    },
   ],
 };
