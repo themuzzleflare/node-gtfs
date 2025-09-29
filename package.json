@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/blinktaginc/node-gtfs.git"
+    "url": "git://github.com/themuzzleflare/node-gtfs.git"
   },
   "license": "MIT",
   "author": "Brendan Nee <brendan@blinktag.com>",
@@ -125,16 +125,16 @@
     "@types/better-sqlite3": "^7.6.13",
     "@types/geojson": "^7946.0.16",
     "@types/lodash-es": "^4.17.12",
-    "@types/node": "^24.5.2",
+    "@types/node": "^24.6.0",
     "@types/yargs": "^17.0.33",
     "eslint": "^9.36.0",
     "globals": "^16.4.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.0",
+    "lint-staged": "^16.2.3",
     "prettier": "^3.6.2",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.44.1"
+    "typescript-eslint": "^8.45.0"
   },
   "engines": {
     "node": ">= 20.11.0"
