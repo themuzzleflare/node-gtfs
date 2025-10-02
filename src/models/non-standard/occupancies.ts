@@ -8,20 +8,16 @@ export const occupancies = {
   nonstandard: true,
   schema: [
     {
-      name: 'id',
-      type: 'integer',
-      primary: true,
-      index: true,
-    },
-    {
       name: 'trip_id',
       type: 'text',
+      primary: true,
       required: true,
       index: true,
     },
     {
       name: 'stop_sequence',
       type: 'integer',
+      primary: true,
       min: 0,
       index: true,
     },

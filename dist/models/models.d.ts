@@ -1607,26 +1607,17 @@ declare const occupancies: {
         name: string;
         type: string;
         primary: boolean;
-        index: boolean;
-        required?: undefined;
-        min?: undefined;
-        max?: undefined;
-      }
-    | {
-        name: string;
-        type: string;
         required: boolean;
         index: boolean;
-        primary?: undefined;
         min?: undefined;
         max?: undefined;
       }
     | {
         name: string;
         type: string;
+        primary: boolean;
         min: number;
         index: boolean;
-        primary?: undefined;
         required?: undefined;
         max?: undefined;
       }
@@ -1638,6 +1629,15 @@ declare const occupancies: {
         index: boolean;
         required: boolean;
         primary?: undefined;
+      }
+    | {
+        name: string;
+        type: string;
+        required: boolean;
+        index: boolean;
+        primary?: undefined;
+        min?: undefined;
+        max?: undefined;
       }
     | {
         name: string;

@@ -581,7 +581,6 @@ export interface Note {
 }
 
 export interface Occupancy {
-  id: number;
   trip_id: string;
   stop_sequence?: number;
   occupancy_status: 0 | 1 | 2 | 3 | 4 | 5 | 6;
